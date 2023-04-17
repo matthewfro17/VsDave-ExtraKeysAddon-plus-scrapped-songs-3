@@ -74,12 +74,17 @@ class FreeplayState extends MusicBeatState
 		0xFF119A2B,    // CHEATING
 		0xFFFF0000,    // UNFAIRNESS
 		0xFF810000,    // EXPLOITATION
+		0xFFFFC0CB, // ELECTRIC COCKADOODLEDOO
+		0xFFFFFFFF, // CUZSIE
+		0xFFBC50B9, // BANANACORE
     ];
 	public static var skipSelect:Array<String> = 
 	[
 		'five-nights',
 		'vs-dave-rap',
-		'vs-dave-rap-two'
+		'vs-dave-rap-two',
+		'confronting-yourself',
+		'cuzsie-x-kapi-shipping-cute'
 	];
 
 	public static var noExtraKeys:Array<String> = 
@@ -87,7 +92,13 @@ class FreeplayState extends MusicBeatState
 		'five-nights',
 		'vs-dave-rap',
 		'vs-dave-rap-two',
-		'overdrive'
+		'overdrive',
+		'bonkers',
+		'confronting-yourself',
+		'cuzsie-x-kapi-shipping-cute'
+		'bananacore',
+		'eletric-cockadoodledoo',
+		'eletric-cockaldoodledoo'
 	];
 
 	private var camFollow:FlxObject;
@@ -289,6 +300,12 @@ class FreeplayState extends MusicBeatState
 					addWeek(['Roofs'], 7, ['baldi']);
 
 			    addWeek(['Vs-Dave-Rap'], 1, ['dave-cool']);
+			    addWeek(['bonkers'], 2, ['garrett']);
+			    addWeek(['confronting-yourself'], 4, ['tristan']);
+			    addWeek(['cuzsie-x-kapi-shipping-cute'], 18, ['cuzsie']);
+			    addWeek(['bananacore'], 19, ['the-trio-old']);
+			    addWeek(['eletric-cockadoodledoo'], 17, ['the-trio']);
+		            addWeek(['eletric-cockaldoodledoo'], 17, ['the-squad']);
 				if(FlxG.save.data.vsDaveRapTwoFound)
 				{
 					addWeek(['Vs-Dave-Rap-Two'], 1, ['dave-cool']);
